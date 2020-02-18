@@ -4,20 +4,20 @@
 This repository gathers the ressources (i.e., datasets and source codes) associated to the paper DYSAN: Dynamically sanitizing motion sensor data against sensitive inferences through adversarial networks submitted to ICML 2020. More precisely, we list the different datasets used in our evaluations and present a short guide to reproduce results. We also explain how to use our implementation of the comparative baselines we consider to assess the performance of DySan.
 
 
-#Datasets
+## Datasets
 
 
-MotionSense
+### MotionSense
 The MotionSense dataset and a description of the data are publicly available: https://github.com/mmalekzadeh/motion-sense
 The raw data are preprocessed in order to exact ...
 The data used in the is available in the dataset directory of the current repository.
 
 
 
-MobiAct
+### MobiAct
 The MobiAct dataset is publicly available: 
 
-#Reproduce results
+## Reproduce results
 
 Run DySan
 
