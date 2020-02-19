@@ -8,9 +8,7 @@ from Modules import Metrics as Me
 from Modules import Datasets as D
 from Modules import CustomLosses as Cl
 from Modules import features
-
 import pandas as pd
-
 import numpy as np
 import scipy.signal as signal
 import numpy as np
@@ -90,8 +88,9 @@ distance = ['distance']
 for e in epochs:
 	print("********** Epoch: " + str(e) + " **********")
 
-	adressTrain = adressSan + "train_A=" + str(P.Alpha) +"-L="+ str(P.Lambda) +"-O=vector-KP="+ str(P.KPred) +"-KD="+ str(P.KDisc) +"-NN=2-Rec=On-E="+ str(e) +".csv"
-	adressTest = adressSan + "test_A=" + str(P.Alpha) +"-L="+ str(P.Lambda) +"-O=vector-KP="+ str(P.KPred) +"-KD="+ str(P.KDisc) +"-NN=2-Rec=On-E="+ str(e) +".csv"
+	adressTrain = adressSan + "train_A=" + str(P.Alpha) +"-L="+ str(P.Lambda) +"-O=vector-KP="+ str(P.KPred) +"-KD="+ str(P.KDisc) +"-NN=2-Rec=Off-E="+ str(e) +".csv"
+	adressTest = adressSan + "test_A=" + str(P.Alpha) +"-L="+ str(P.Lambda) +"-O=vector-KP="+ str(P.KPred) +"-KD="+ str(P.KDisc) +"-NN=2-Rec=Off-E="+ str(e) +".csv"
+
 	features.features_creation(adressSave, adressTrain, adressTest,e)
 
 	featuresTrain = adressSave + "/features_Train_"+ str(e) +".csv"
