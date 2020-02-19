@@ -1,0 +1,2 @@
+- Run Sanitization.py to produce sanitized dataset for a set of parameters, use Parameters/Parameters.py to configure your experiment.
+- Run Analysis.py to produced the results based on the sanitized dataset.
