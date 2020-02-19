@@ -17,7 +17,6 @@ from Modules import Metrics as Me
 from Modules import Datasets as D
 from Modules import CustomLosses as Cl
 
-from pytorchtools import EarlyStopping
 
 
 DEVICE = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
@@ -65,7 +64,7 @@ def generate_dataset(san, train_prep, train_ds, test_prep, test_ds, gen_path, tr
     bs = 1024
     train_dl = data.DataLoader(train_ds, batch_size=bs, shuffle=False, num_workers=1)
     test_dl = data.DataLoader(test_ds, batch_size=bs, shuffle=False, num_workers=1)
-    name = lambda n, e: "{}/{}_{}_mobi.csv".format(gen_path, n, addParamFn(e))
+    name = lambda n, e: "{}/{}_{}.csv".format(gen_path, n, addParamFn(e))
     def _generate_(san, dataloader, dset, prep, phys=phys, san_acts=san_acts, san_phys=san_phys):
         df = pd.DataFrame()
         select = lambda x, y, c: x if c else y
