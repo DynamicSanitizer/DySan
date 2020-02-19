@@ -6,14 +6,14 @@ import scipy.signal as signal
 import time
 import matplotlib.pyplot as plt
 import math
-from Modules.PreProcessing import *
 import scipy.fftpack as fftpack
 import scipy
+from Modules.PreProcessing import *
 from operator import itemgetter
 import csv
 import os
 
-def features_creation(adressSave, adressTrain, adressTest, epoch)
+def features_creation(adressSave, adressTrain, adressTest, epoch):
 	print("Epoch : " + str(epoch))
 	
 	if not os.path.exists(adressSave):
