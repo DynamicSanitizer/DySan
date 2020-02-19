@@ -8,8 +8,9 @@ from Modules import Metrics as Me
 from Modules import Datasets as D
 from Modules import CustomLosses as Cl
 from Modules import features
+
 import pandas as pd
-from PreProcessing import *
+
 import numpy as np
 import scipy.signal as signal
 import numpy as np
@@ -89,8 +90,8 @@ distance = ['distance']
 for e in epochs:
 	print("********** Epoch: " + str(e) + " **********")
 
-	adressTrain = adressSan + "train_A=" + P.Alpha +"-L="+ P.Lambda +"-O=vector-KP="+ P.KPred +"-KD="+ P.KDisc +"-NN=2-Rec=Off-E="+ str(e) +".csv"
-	adressTest = adressSan + "test_A=" + P.Alpha +"-L="+ P.Lambda +"-O=vector-KP="+ P.KPred +"-KD="+ P.KDisc +"-NN=2-Rec=Off-E="+ str(e) +".csv"
+	adressTrain = adressSan + "train_A=" + str(P.Alpha) +"-L="+ str(P.Lambda) +"-O=vector-KP="+ str(P.KPred) +"-KD="+ str(P.KDisc) +"-NN=2-Rec=On-E="+ str(e) +".csv"
+	adressTest = adressSan + "test_A=" + str(P.Alpha) +"-L="+ str(P.Lambda) +"-O=vector-KP="+ str(P.KPred) +"-KD="+ str(P.KDisc) +"-NN=2-Rec=On-E="+ str(e) +".csv"
 	features.features_creation(adressSave, adressTrain, adressTest,e)
 
 	featuresTrain = adressSave + "/features_Train_"+ str(e) +".csv"
@@ -120,7 +121,7 @@ for e in epochs:
 	yTrain2 = yTrainGender
 	yTest2 = yTestGender
 
-	testBrute = pd.read_csv(adresseTest)
+	testBrute = pd.read_csv(adressTest)
 	xTestBrute = testBrute.loc[:,'rotationRate.x':'userAcceleration.z']
 	xTestBrute = xTestBrute.as_matrix()
 	tempDistance = []
@@ -142,10 +143,10 @@ for e in epochs:
 		predictions = clf.predict(xTest)
 		accuGender[i].append(Me.Metrics().accuracy(predictions, yTest2))
 
-	train_prep = D.Preprocessing(adresseTrain, prep_excluded=P.PreprocessingExcluded, scale=P.Scale,
+	train_prep = D.Preprocessing(adressTrain, prep_excluded=P.PreprocessingExcluded, scale=P.Scale,
 		                     prep_included=P.PreprocessingIncluded, numeric_as_categoric_max_thr = 0)
 	train_prep.set_features_ordering(None)
-	test_prep = D.Preprocessing(adresseTest, prep_excluded=P.PreprocessingExcluded, scale=P.Scale,
+	test_prep = D.Preprocessing(adressTest, prep_excluded=P.PreprocessingExcluded, scale=P.Scale,
 		                    prep_included=P.PreprocessingIncluded, numeric_as_categoric_max_thr = 0)
 	test_prep.set_features_ordering(None)
 	test_prep.fit_transform()
