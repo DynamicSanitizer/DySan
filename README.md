@@ -9,13 +9,12 @@ This repository gathers the ressources (i.e., datasets and source codes) associa
 
 ### MotionSense
 The MotionSense dataset and a description of the data are publicly available: https://github.com/mmalekzadeh/motion-sense
-The raw data are preprocessed in order to exact ...
-The data used in the is available in the dataset directory of the current repository.
-
+The raw data is shaped thanks to the code available in the github of MotionSense
+The data used is available in "data" directory of the current repository.
 
 
 ### MobiAct
-The MobiAct dataset is publicly available: 
+The MobiAct dataset is publicly available: https://bmi.hmu.gr/the-mobifall-and-mobiact-datasets-2/
 
 ## Reproduce results
 
