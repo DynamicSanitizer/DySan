@@ -13,7 +13,7 @@ from operator import itemgetter
 import csv
 import os
 
-def features_creation(adressSave, adressTrain, adressTest, epoch)
+def features_creation(adressSave, adressTrain, adressTest, epoch):
 	print("Epoch : " + str(epoch))
 	
 	if not os.path.exists(adressSave):
