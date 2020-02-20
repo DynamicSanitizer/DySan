@@ -20,7 +20,7 @@ The training and testing set have been shaped thanks to the code available in th
 
 
 ### MobiAct
-The MobiAct dataset and a description of the data are publicly available: https://bmi.hmu.gr/the-mobifall-and-mobiact-datasets-2/
+The MobiAct dataset and a description of the data are publicly available: https://bmi.hmu.gr/the-mobifall-and-mobiact-datasets-2/.
 
 
 
