@@ -15,7 +15,7 @@ We use reference datasets to evaluation DySan. We pre-processed the raw data of 
 
 
 ### MotionSense
-The MotionSense dataset and a description of the data are publicly available: https://github.com/mmalekzadeh/motion-sense
+The MotionSense dataset and a description of the data are publicly available: https://github.com/mmalekzadeh/motion-sense.
 The training and testing set have been shaped thanks to the code available in the github of MotionSense.
 
 
