@@ -1,7 +1,7 @@
 # DySan
 
 
-This repository gathers the ressources (i.e., datasets and source codes) associated to the paper DYSAN: Dynamically sanitizing motion sensor data against sensitive inferences through adversarial networks submitted to ICML 2020. More precisely, we list the different datasets used in our evaluations and present a short guide to reproduce results. We also explain how to use our implementation of the comparative baselines we consider to assess the performance of DySan.
+This repository gathers the ressources (i.e., datasets and source codes) associated to the paper DySan: Dynamically sanitizing motion sensor data against sensitive inferences through adversarial networks. More precisely, we list the different datasets used in our evaluations and present a short guide to reproduce results for both DySan and the considered comparative baselines. If you have any question, do not hesitate to drop a message at dynamicsanitizer@gmail.com.
 
 
 ## Dependency
