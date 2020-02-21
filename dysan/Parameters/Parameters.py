@@ -12,8 +12,8 @@ ParamsDirId = "Prm"
 
 #### Datasets
 SetName = "Dysan"
-TrainPath =  "../data/trainTrial.csv"
-TestPath = "../data/testTrial.csv"
+TrainPath =  "../data/motionsense_trainTrial.csv"
+TestPath = "../data/motionsense_testTrial.csv"
 
 # Column excluded from the preprocessing process, they will be appended at the of the preprocessed dataset as it
 PreprocessingExcluded = ["trial", "act", "id", "gender"]

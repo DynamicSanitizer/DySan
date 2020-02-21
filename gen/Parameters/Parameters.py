@@ -12,8 +12,8 @@ ParamsDirId = "Prm"
 
 #### Datasets
 SetName = "Gen"
-TrainPath =  "../data/trainTrial.csv"
-TestPath = "../data/testTrial.csv"
+TrainPath =  "../data/motionsense_trainTrial.csv"
+TestPath = "../data/motionsense_testTrial.csv"
 
 #TrainPath =  "mobiAct_final6_train_newtrial.csv"
 #TestPath = "mobiAct_final6_test_newtrial.csv"

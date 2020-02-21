@@ -30,8 +30,8 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 CPU_DEVICE = torch.device("cpu")
 torch.cuda.empty_cache()
 
-originaleTrain = "../data/trainTrial.csv"
-originaleTest = "../data/testTrial.csv"
+originaleTrain = "../data/motionsense_trainTrial.csv"
+originaleTest = "../data/motionsense_testTrial.csv"
 adressSan = P.ExperimentBaseDir + P.SetName + "/Exp_" + P.ExpNumber +  "/SubExp_1/Generated/"
 adressSave = P.ExperimentBaseDir + P.SetName + "/Exp_" + P.ExpNumber +  "/features"
 epochs = [1,25,50,75,100,125,150,175,200,225,250,275,300]
