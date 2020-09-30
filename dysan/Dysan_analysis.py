@@ -154,7 +154,7 @@ for parameter in params:
 		temp = 'temporary_file.csv'
 
 
-		a = torch.load('./Modules/test_ds_mobiact.pt')
+		a = torch.load('./Modules/rf_mobiact.pt')
 		truepred = a.activities.numpy()
 		truepredid = a.users_id.numpy()
 		locid = np.where(truepredid == e)[0]
