@@ -55,4 +55,12 @@ MSDA (Motion Sensor Data Anonymisation) refers to the publication: **Malekzadeh,
 While our implementation of this solution is also based on DySan and uses a neural network with a slightly different architecture, we keep the same original behavior.
 Similarly to DySan, to run GEN you have to configure the parameters in the file Parameters.py and then run Sanitization.py to produce the sanitized dataset. To evaluate the associated accuracy of the results, you have to run Analysis.py.
 
+How to cite DySan:
+
+
+DYSAN: Dynamically sanitizing motion sensor data against sensitive inferences through adversarial networks,
+Théo Jourdan and Antoine Boutet and Carole Frindel and Sébastien Gambs and Claude Rosin Ngueveu,
+arXiv, cs.CR, 2003.10325, 2020.
+
+https://arxiv.org/abs/2003.10325
 
